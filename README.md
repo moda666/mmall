@@ -1,1 +1,0 @@
-mmall_learning
