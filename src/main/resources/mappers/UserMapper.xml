@@ -19,7 +19,7 @@
     id, username, password, email, phone, question, answer, role, create_time, update_time
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from mmall_user
     where id = #{id,jdbcType=INTEGER}
@@ -29,12 +29,12 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.mmall.pojo.User" >
-    insert into mmall_user (id, username, password, 
-      email, phone, question, 
-      answer, role, create_time, 
+    insert into mmall_user (id, username, password,
+      email, phone, question,
+      answer, role, create_time,
       update_time)
-    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{email,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{question,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{email,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{question,jdbcType=VARCHAR},
       #{answer,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER}, now(),
       now())
   </insert>
@@ -151,4 +151,38 @@
       update_time = now()
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="checkUsername" resultType="int" parameterType="string">
+    SELECT count(1)
+    FROM mmall_user
+    WHERE username = #{username}
+  </select>
+
+  <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
+    SELECT
+      <include refid="Base_Column_List"/>
+    FROM mmall_user
+    WHERE username = #{username}
+      and password = #{password}
+  </select>
+
+    <select id="checkEmail" resultType="java.lang.Integer" parameterType="string">
+        SELECT count(1)
+        FROM mmall_user
+        WHERE email = #{email}
+    </select>
+    <select id="selectQuestionByUsername" resultType="java.lang.String" parameterType="string">
+        SELECT question
+        FROM mmall_user
+        WHERE username = #{username}
+    </select>
+    <select id="checkAnswer" resultType="java.lang.Integer" parameterMap="map">
+        SELECT count(1)
+        FROM mmall_user
+        WHERE username = #{username}
+        and question = #{question}
+        and answer = #{answer}
+    </select>
+
+
 </mapper>
