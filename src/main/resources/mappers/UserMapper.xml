@@ -158,7 +158,7 @@
     WHERE username = #{username}
   </select>
 
-  <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
+  <select id="selectLogin" resultMap="BaseResultMap" parameterType="Map">
     SELECT
       <include refid="Base_Column_List"/>
     FROM mmall_user
@@ -166,17 +166,17 @@
       and password = #{password}
   </select>
 
-    <select id="checkEmail" resultType="java.lang.Integer" parameterType="string">
+    <select id="checkEmail" resultType="int" parameterType="string">
         SELECT count(1)
         FROM mmall_user
         WHERE email = #{email}
     </select>
-    <select id="selectQuestionByUsername" resultType="java.lang.String" parameterType="string">
+    <select id="selectQuestionByUsername" resultType="string" parameterType="string">
         SELECT question
         FROM mmall_user
         WHERE username = #{username}
     </select>
-    <select id="checkAnswer" resultType="java.lang.Integer" parameterMap="map">
+    <select id="checkAnswer" resultType="int" parameterType="Map">
         SELECT count(1)
         FROM mmall_user
         WHERE username = #{username}
@@ -184,5 +184,24 @@
         and answer = #{answer}
     </select>
 
+    <update id="updatePasswordByUsername" parameterType="Map">
+      UPDATE mmall_user
+      SET password = #{passwordNew}, update_time = now()
+      where username = #{username}
+    </update>
+
+    <select id="checkPassword" resultType="int" parameterType="Map">
+      SELECT count(1)
+      FROM mmall_user
+      WHERE id = #{userId}
+      and password = #{password}
+    </select>
+
+    <select id="checkEmailByUserId" resultType="int" parameterType="Map">
+      SELECT count(1)
+      FROM mmall_user
+      WHERE email = #{email}
+      and id != #{userId}
+    </select>
 
 </mapper>

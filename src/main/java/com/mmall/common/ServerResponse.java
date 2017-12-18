@@ -28,7 +28,6 @@ public class ServerResponse<T> implements Serializable {
     }
 
     private ServerResponse(int status, String msg, T data) {
-
         this.status = status;
         this.msg = msg;
         this.data = data;
@@ -84,5 +83,6 @@ public class ServerResponse<T> implements Serializable {
     public static <T> ServerResponse<T> createByErrorCodeMessage(int errorCode, String errorMessage) {
         return new ServerResponse<T>(errorCode, errorMessage);
     }
+
 
 }
