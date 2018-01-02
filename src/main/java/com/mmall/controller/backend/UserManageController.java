@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/9
  */
 @Controller

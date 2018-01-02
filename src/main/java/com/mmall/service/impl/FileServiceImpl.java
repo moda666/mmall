@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/12
  */
 @Service("iFileService")

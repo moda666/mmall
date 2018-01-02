@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/11/19
  */
 @Controller

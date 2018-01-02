@@ -25,7 +25,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/12
  */
 @Controller
@@ -135,7 +135,7 @@ public class ProductManageController {
             String targetFileName = iFileService.upload(file, path);
             String url = PropertiesUtil.getProperty("ftp.server.http.prefix") + targetFileName;
 
-            Map fileMap = Maps.newHashMap();
+            Map<String, String> fileMap = Maps.newHashMap();
             fileMap.put("uri", targetFileName);
             fileMap.put("url", url);
 
@@ -147,8 +147,8 @@ public class ProductManageController {
 
     @RequestMapping("richtext_img_upload.do")
     @ResponseBody
-    public Map richtextImgUpload(HttpSession session, @RequestParam(value = "upload_file",required = false) MultipartFile file, HttpServletRequest request, HttpServletResponse response){
-        Map resultMap = Maps.newHashMap();
+    public Map<String, Object> richtextImgUpload(HttpSession session, @RequestParam(value = "upload_file",required = false) MultipartFile file, HttpServletRequest request, HttpServletResponse response){
+        Map<String, Object> resultMap = Maps.newHashMap();
         User user = (User)session.getAttribute(Const.CURRENT_USER);
         if(user == null){
             resultMap.put("success",false);

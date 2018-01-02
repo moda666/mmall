@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 /**
-  * @author adXiang
+  * @author MaWenXiang
   * @date 2017/12/12
  */
 public class PropertiesUtil {

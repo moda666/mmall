@@ -6,7 +6,7 @@ import com.mmall.pojo.Category;
 import java.util.List;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/10
  */
 public interface ICategoryService {

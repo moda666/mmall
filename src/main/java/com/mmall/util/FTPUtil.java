@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/12
  */
 public class FTPUtil {
@@ -67,7 +67,9 @@ public class FTPUtil {
                 uploaded = false;
                 e.printStackTrace();
             } finally {
-                fis.close();
+                if (fis != null) {
+                    fis.close();
+                }
                 ftpClient.disconnect();
             }
         }

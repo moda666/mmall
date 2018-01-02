@@ -6,7 +6,7 @@ import sun.misc.BASE64Encoder;
 import java.io.UnsupportedEncodingException;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/11/19
  */
 public class Base64GroupTest {

@@ -6,7 +6,7 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 import java.io.Serializable;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/11/19
  */
 //保证序列化json的时候,如果是null的对象,key也会消失

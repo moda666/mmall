@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import static org.junit.Assert.*;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/10
  */
 public class UserServiceImplTest extends TestBase {

@@ -4,7 +4,7 @@ import com.mmall.common.ServerResponse;
 import com.mmall.pojo.User;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/11/19
  */
 public interface IUserService {

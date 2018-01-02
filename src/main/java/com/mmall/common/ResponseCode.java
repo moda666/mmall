@@ -1,7 +1,7 @@
 package com.mmall.common;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/11/19
  */
 public enum ResponseCode {

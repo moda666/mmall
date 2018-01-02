@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * @author adXiang
+ * @author MaWenXiang
  * @date 2017/12/10
  */
 public class CategoryServiceImplTest extends TestBase {
