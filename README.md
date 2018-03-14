@@ -2,7 +2,11 @@
 
 项目预览地址：http://www.adxiang.top/
 
+## 登录购物演示
+
 ![](https://github.com/adXiang/miaosha/blob/master/img/buy.gif)
+
+## 支付演示
 
 ![](https://github.com/adXiang/miaosha/blob/master/img/pay.gif)
 
