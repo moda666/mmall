@@ -1,8 +1,24 @@
 # 网上商城
 
-# 支付
+项目预览地址：http://www.adxiang.top/
 
-支付模块是本项目的亮点和难点，本项目对接了支付宝的'当面付'，即'扫码支付'，通过订单号生成付款二维码，上传FTP服务器，展示给客户扫码成功付款后（通过支付宝沙箱环境模拟支付），收到支付宝回调，商家验证签名正确性,然后进行后续操作  
+![](https://github.com/adXiang/miaosha/blob/master/img/buy.gif)
+
+![](https://github.com/adXiang/miaosha/blob/master/img/pay.gif)
+
+# 服务器情况
+
+**服务器类型**：阿里云轻量应用服务器
+
+**CPU核心数**：单核
+
+**内存**：2G
+
+**磁盘**：40G
+
+# 支付功能
+
+支付模块是本项目的亮点和难点，本项目对接了支付宝的'当面付'，即'扫码支付'，通过订单号生成付款二维码，上传FTP服务器，展示给客户扫码成功付款后（通过支付宝沙箱环境模拟支付），收到支付宝回调，商家验证签名正确性，然后进行后续操作
 
 具体可查看[支付宝官方文档](https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.Q4tRmQ&treeId=193&articleId=105072&docType=1)<br>
 以及[支付宝沙箱](https://openhome.alipay.com/platform/appDaily.htm?tab=info)<br>
@@ -11,7 +27,7 @@
 
 ![](http://img01.taobaocdn.com/top/i1/LB1KXhmLXXXXXaIapXXXXXXXXXX)
 
-## 大致流程图
+## 调用流程
 
 ![流程图](https://img.alicdn.com/top/i1/LB14VRALXXXXXcnXXXXXXXXXXXX)
 
