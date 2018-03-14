@@ -1,23 +1,17 @@
-## 网上商城
+# 网上商城
 
-## 订单
+# 支付
 
-1.前台用户创建订单，获取下单商品详情，订单列表,详情及取消订单
+支付模块是本项目的亮点和难点，本项目对接了支付宝的'当面付'，即'扫码支付'，通过订单号生成付款二维码，上传FTP服务器，展示给客户扫码成功付款后（通过支付宝沙箱环境模拟支付），收到支付宝回调，商家验证签名正确性,然后进行后续操作  
 
-2.后台管理可以查看订单列表，搜索订单，订单发货
-
-3.支付模块是本项目的亮点和难点，本项目对接了支付宝的'当面付'，即'扫码支付'，通过订单号生成付款二维码，<br>
- 上传FTP服务器，展示给客户扫码成功付款后（通过支付宝沙箱环境模拟支付），收到支付宝回调，商家验证签名正确性,然后进行后续操作
-  
-## 支付
 具体可查看[支付宝官方文档](https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.Q4tRmQ&treeId=193&articleId=105072&docType=1)<br>
 以及[支付宝沙箱](https://openhome.alipay.com/platform/appDaily.htm?tab=info)<br>
 
-### 业务流程
+## 业务流程
 
 ![](http://img01.taobaocdn.com/top/i1/LB1KXhmLXXXXXaIapXXXXXXXXXX)
 
-### 大致流程图
+## 大致流程图
 
 ![流程图](https://img.alicdn.com/top/i1/LB14VRALXXXXXcnXXXXXXXXXXXX)
 
