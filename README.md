@@ -1,6 +1,6 @@
 # 网上商城
 
-项目预览地址：http://www.adxiang.top/
+项目预览地址：http://adxiang.top/
 
 ## 登录购物演示
 
